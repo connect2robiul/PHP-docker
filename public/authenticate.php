@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require '/var/www/conf/config.php';
+require '/var/www/html/config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $conn->real_escape_string($_POST['username']);
