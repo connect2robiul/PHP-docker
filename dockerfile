@@ -11,6 +11,7 @@ RUN a2enmod rewrite
 COPY public/ /var/www/html/
 COPY config.php /var/www/html/
 COPY docker/ /var/www/html/
+COPY authenticate.php /var/www/html/
 
 # Set environment variables
 ENV APACHE_DOCUMENT_ROOT /var/www/html
